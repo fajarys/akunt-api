@@ -21,4 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::get('/transaction', [TransactionController::class , 'index']);
+Route::get('/transaction', [TransactionController::class, 'index']);
+Route::post('transaction', [TransactionController::class, 'store']);
